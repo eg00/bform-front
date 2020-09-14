@@ -1,0 +1,34 @@
+$primary:       #0B559E;
+$input-btn-focus-color:       #ff0000;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-image: linear-gradient(135deg, #0b559e 16.67%, #ffffff 16.67%, #ffffff 50%, #0b559e 50%, #0b559e 66.67%, #ffffff 66.67%, #ffffff 100%);
+  background-size: 1697.06px 1697.06px;
+}
+
+.btn-primary:hover {
+  background-color: $primary;
+}
+
+.bg-filter img {
+  filter: saturate(0.75) contrast(0.85) brightness(1.1) ;
+}
+
+.bg-filter{
+  position: relative;
+}
+
+.bg-filter:after{
+  position: absolute; content: ''; display: block; top: 0; left: 0; height: 100%; width: 100%;
+  background: radial-gradient(ellipse at center,rgba(236, 205, 169, 0.15) 0%, rgba(50, 30, 7, 0.4) 100%);
+  mix-blend-mode: multiply
+}
+
+.container-shadow {
+  @include media-breakpoint-up(md) {
+    box-shadow: 0 0 21px 10px rgba(0,0,0,0.75);
+  }
+
+}
