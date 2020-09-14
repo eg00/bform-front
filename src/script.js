@@ -12,5 +12,11 @@ $(document).ready(() => {
         $.post("https://jsonplaceholder.typicode.com/posts", form, function (res) {
             console.log(res)
         })
+
+
+
+
+
+        dasdsds
     })
 })
